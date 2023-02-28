@@ -18,6 +18,8 @@ public class Main {
 
 class Methods {
     void printName (String[] names) {
-        System.out.println(Arrays.toString(names));
+        for (String name : names) {
+            System.out.print(name + " ");
+        }
     }
 }
