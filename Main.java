@@ -1,22 +1,23 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Human person = new Human();
-        System.out.println("Masukkan identitas manusia: ");
+        Methods myMethod = new Methods();
+        String[] names = new String[5];
 
-        System.out.printf("\tNama : ");
-        person.setName(sc.nextLine());
-
-        System.out.printf("\tTahun Lahir : ");
-        person.setYearOfBirth(sc.nextInt());
-        sc.nextLine();
-
-        System.out.printf("\nDeskripsi manusia:\n\tNama: %s\n\tTahun lahir: %d\n", person.getName(),
-                person.getYearOfBirth());
-        person.breath();
-
+        for (int i = 0; i < names.length; i++) {
+            names[i] = sc.nextLine();
+        }
         sc.close();
+
+        myMethod.printName(names);
+    }
+}
+
+class Methods {
+    void printName (String[] names) {
+        System.out.println(Arrays.toString(names));
     }
 }
