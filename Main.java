@@ -2,26 +2,42 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Program mirza = new Program();
         Scanner sc = new Scanner(System.in);
-        Methods myMethod = new Methods();
-        String[] names = new String[5];
-        int[] scores = new int[5];
 
-        for (int i = 0; i < names.length; i++) {
-            names[i] = sc.nextLine();
-            scores[i] = sc.nextInt();
-            sc.nextLine();
+        switch (sc.nextInt()) {
+            case 1:
+                System.out.printf("%d", (int)mirza.persegi(sc.nextDouble()));
+                break;
+            case 2:
+                System.out.printf("%d", (int)mirza.segitiga(sc.nextDouble(), sc.nextDouble()));
+                break;
+            case 3:
+                double n = mirza.lingkaran(sc.nextInt());
+                if (n % 1 == 0) System.out.println(n);
+                else System.out.println(Math.floor(n));
+                break;
+            default:
+            System.out.println("Input yang anda masukan tidak sesuai");
+                break;
         }
         sc.close();
-
-        myMethod.printName(names, scores);
     }
 }
 
-class Methods {
-    void printName (String[] names, int[] scores) {
-        for (int i = 0; i < scores.length; i++) {
-            System.out.printf("%s\t: %d\n", names[i], scores[i]);
-        }
+class Program {
+    Scanner sc = new Scanner(System.in);
+
+    double persegi(double p) {
+        return (int) Math.pow(p, 2);
+    }
+
+    double segitiga(double a, double t) {
+        return (double) 0.5 * a * t;
+    }
+
+    double lingkaran(double r) {
+        if (r % 7 == 0) return (22/7) * Math.pow(r, 2);
+        else return 3.14 * Math.pow(r, 2);
     }
 }
