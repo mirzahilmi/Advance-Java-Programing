@@ -3,6 +3,7 @@ class Human {
     private int id;
     private String name;
     private int yearOfBirth;
+    private String interest;
 
     Human(int max) {
         this.id = (int)(Math.random() * (max - 1)) + 1;
@@ -20,6 +21,10 @@ class Human {
         this.yearOfBirth = year;
     }
 
+    void setInterest(String interest) {
+        this.interest = interest;
+    }
+
     String getName() {
         return this.name;
     }
@@ -30,5 +35,9 @@ class Human {
 
     int getID() {
         return this.id;
+    }
+
+    String getInterest() {
+        return this.interest;
     }
 }
