@@ -6,7 +6,6 @@ Welcome to the GitHub repository for my college Advance Java Programming class! 
 
 ## Table of Contents
 
-- [College Advanced Java Programming Class Repository](#college-advanced-java-programming-class-repository)
   - [Table of Contents](#table-of-contents)
   - [Course Description](#course-description)
   - [Class Materials](#class-materials)
