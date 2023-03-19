@@ -3,9 +3,11 @@ package practicum;
 // import java.util.ArrayList;
 
 public class DataMerchant {
+
 // Mirza Hilmi Shodiq
 // 225150707111067
 // TI-D
+
     static Merchant merchants[] = new Merchant[0];
 
     // Another approach using ArrayList :
