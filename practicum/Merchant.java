@@ -1,7 +1,10 @@
 package practicum;
 
 public class Merchant {
-    private String namaMerchant;
+// Mirza Hilmi Shodiq
+// 225150707111067
+// TI-D
+    private String namaMerchant; // Primary Key (must UNIQUE)
     private String namaProduk;
     private double hargaMakanan;
 

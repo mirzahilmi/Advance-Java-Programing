@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Assignment1 {
-    // Mirza Hilmi Shodiq
-    // 225150707111067
-    // TI-D
+// Mirza Hilmi Shodiq
+// 225150707111067
+// TI-D
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Human person = new Human();

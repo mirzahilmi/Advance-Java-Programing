@@ -1,16 +1,49 @@
 package practicum;
 
 public class Main {
+// Mirza Hilmi Shodiq
+// 225150707111067
+// TI-D
     public static void main(String[] args) {
-        DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
-        ("Antaguese", "Toasted Monkey Balls", 782_900.99));
+        // Task 1 : Test tambahMerchant & tampilData method
+        final String IDENTITY = "Mirza Hilmi Shodiq\n225150707111067\n";
+        System.out.println(IDENTITY);
 
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
-        ("Supratman", "Honey Glazed Turtle Foot", 34_389_900.99));
+        ("Antaguese", "Baguette", 782_900.99));
 
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
-        ("Andawgius", "Burnt Dolphin Brain", 83_982_900.99));
+        ("Mercurious", "Ratatouille", 34_389_900.99));
+
+        DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
+        ("Andawgius", "Croissant", 83_982_900.99));
+
+        ScannerExtra scx = new ScannerExtra();
+
+        Merchant merchant = new Merchant(scx.nextLine("Nama\t\t: "), scx.nextLine("Nama Produk\t: "), scx.nextDouble("Harga Makanan\t: "));
+        System.out.println();
+        
+        DataMerchant.merchants = DataMerchant.tambahMerchant(merchant);
 
         DataMerchant.tampilData();
+
+        // Task 2 : Test cariMerchant & tampilMerchant method
+        merchant = DataMerchant.cariMerchant("Mercurious");
+        DataMerchant.tampilMerchant(merchant);
+
+        merchant = DataMerchant.cariMerchant("Mega what tea");
+        DataMerchant.tampilMerchant(merchant);
+
+        // Task 3 : Test updateMerchant method
+        merchant = new Merchant("Andawgius", "Carbonara", 2_876_990);
+        DataMerchant.updateMerchant(merchant);
+        DataMerchant.tampilData();
+
+        merchant = new Merchant("Poo and", "Island", 1);
+        DataMerchant.updateMerchant(merchant);
+
+        // Task 4 : Test tambahMerchant method constraint that a data must be unique
+        DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
+        ("Antaguese", "Noodles", 1_489_900));
     }
 }

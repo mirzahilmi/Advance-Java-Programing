@@ -1,12 +1,12 @@
-package tid.geometry.specialshapes.one;
+package tid.geometry.specialshapes.two;
 
 public class Circle {
     private double rad;
-    private int id;
+    private static int id;
 
-    public Circle(double rad, int id) {
+    public Circle(double rad) {
         this.rad = rad;
-        this.id = id;
+        ++id;
     }
 
     public int getID() {

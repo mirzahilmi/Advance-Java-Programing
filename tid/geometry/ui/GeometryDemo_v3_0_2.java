@@ -1,6 +1,6 @@
 package tid.geometry.ui;
 
-import tid.geometry.specialshapes.one.*;
+import tid.geometry.specialshapes.two.*;
 import java.util.Scanner;
 
 // Miza Hilmi Shodiq
