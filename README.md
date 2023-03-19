@@ -1,4 +1,6 @@
-# College Advanced Java Programming Class Repository
+![PemlanHeader](https://user-images.githubusercontent.com/118604764/226203126-6023305b-826a-4871-97ec-267f9c7b90e6.svg)
+
+# Advanced Java Programming Class
 
 Welcome to the GitHub repository for my college Advance Java Programming class! Here you will find all the materials, assignments, projects, and other resources related to the course.
 
