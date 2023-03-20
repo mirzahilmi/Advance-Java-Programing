@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/MirzaHilmi/Advance-Java-Programing/master/header-image.png" alt="banner that says Pemrograman Lanjut Class">
+
 # Advanced Java Programming Class
 
 Welcome to the GitHub repository for my college Advance Java Programming class! Here you will find all the materials, assignments, projects, and other resources related to the course.
