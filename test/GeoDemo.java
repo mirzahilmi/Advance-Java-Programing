@@ -1,5 +1,7 @@
+package test;
 import java.util.Scanner;
 
+import assignments.assignment2.Point;
 import shape.Circle;
 
 public class GeoDemo {

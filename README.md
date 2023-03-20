@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/MirzaHilmi/Advance-Java-Programing/master/header-image.png" alt="banner that says Pemrograman Lanjut Class">
+<img src="https://raw.githubusercontent.com/MirzaHilmi/Advance-Java-Programing/master/docs/header-image.png" alt="banner that says Pemrograman Lanjut Class">
 
 # Advanced Java Programming Class
 

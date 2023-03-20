@@ -1,3 +1,4 @@
+package test;
 public class Human {
     private int id;
     private String name;

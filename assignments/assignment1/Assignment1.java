@@ -1,3 +1,4 @@
+package assignments.assignment1;
 import java.util.Scanner;
 
 public class Assignment1 {

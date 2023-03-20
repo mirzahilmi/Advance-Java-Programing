@@ -1,3 +1,4 @@
+package test;
 class Enemy {
     String name;
     int health;

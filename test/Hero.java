@@ -1,3 +1,4 @@
+package test;
 class Hero {
     String name;
     int health;

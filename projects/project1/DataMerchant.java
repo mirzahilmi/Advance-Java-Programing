@@ -1,4 +1,4 @@
-package practicum;
+package projects.project1;
 
 // import java.util.ArrayList;
 

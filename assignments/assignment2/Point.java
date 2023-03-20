@@ -1,4 +1,5 @@
-class Point {
+package assignments.assignment2;
+public class Point {
     private int x;
     private int y;
 
