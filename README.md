@@ -6,14 +6,13 @@ Welcome to the GitHub repository for my college Advance Java Programming class! 
 
 ## Table of Contents
 
-- [Advanced Java Programming Class](#advanced-java-programming-class)
-  - [Table of Contents](#table-of-contents)
-  - [Course Description](#course-description)
-  - [Class Materials](#class-materials)
-  - [Assignments](#assignments)
-  - [Projects](#projects)
-  - [Other Resources](#other-resources)
-  - [Contact Information](#contact-information)
+- [Table of Contents](#table-of-contents)
+- [Course Description](#course-description)
+- [Class Materials](#class-materials)
+- [Assignments](#assignments)
+- [Projects](#projects)
+- [Other Resources](#other-resources)
+- [Contact Information](#contact-information)
 
 ## Course Description
 
