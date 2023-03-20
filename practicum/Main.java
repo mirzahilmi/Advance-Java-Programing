@@ -12,10 +12,10 @@ public class Main {
         System.out.println(IDENTITY);
 
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
-        ("Antaguese", "Baguette", 782_900.99));
+        ("Antaguese", "Baguette", 782_900.68));
 
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
-        ("Mercurious", "Ratatouille", 34_389_900.99));
+        ("Mercurious", "Ratatouille", 34_389_900.32));
 
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
         ("Andawgius", "Croissant", 83_982_900.99));

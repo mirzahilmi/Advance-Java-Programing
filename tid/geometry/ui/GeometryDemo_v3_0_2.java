@@ -16,18 +16,17 @@ public class GeometryDemo_v3_0_2 {
 
         Scanner sc = new Scanner(System.in);
 
-        double[] radList = new double[sc.nextInt()];
+        Circle[] lingkarans = new Circle[sc.nextInt()];
 
-        for (int i = 0, j = 1; i < radList.length; i++, j++) {
+        for (int i = 0, j = 1; i < lingkarans.length; i++, j++) {
             System.out.printf("Masukkan radius lingkaran %d (m): ", j);
-            radList[i] = sc.nextDouble();
+            lingkarans[i] = new Circle(sc.nextDouble());
         }
 
         System.out.println();
 
-        for (int i = 0; i < radList.length; i++) {
-            Circle lingkaran = new Circle(radList[i]);
-            System.out.printf("Lingkaran ke-%d:\nID:\t\tL%d\nRadius:\t\t%.2f m\nLuas:\t\t%.2f m2\nKeliling:\t%.2f m\n\n",
+        for (Circle lingkaran : lingkarans) {
+            System.out.printf("Lingkaran ke-%d:\nID:\t\tL%d\nRadius:\t\t%.2f m\nLuas:\t\t%.2f m2\nKeliling:\t%2f m\n\n",
             lingkaran.getID(), lingkaran.getID(), lingkaran.getRad(), lingkaran.getArea(), lingkaran.getCircumference());
         }
 

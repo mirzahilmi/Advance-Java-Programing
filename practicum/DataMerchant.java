@@ -14,7 +14,7 @@ public class DataMerchant {
     // static ArrayList<Merchant> merchants = new ArrayList<Merchant>();
 
     static Merchant[] tambahMerchant(Merchant merchant) {
-        if (!isUnique(merchant)) {
+        if (!isUnique(merchant) || merchant == null) {
             System.out.println("The provided data already exist in the database\n");
             return null;
         }
@@ -38,14 +38,14 @@ public class DataMerchant {
 
     static void tampilData() {
         for (Merchant merchant : merchants) {
-            System.out.println("====Tampilan Data Merchant UBFood====");
-            System.out.printf("Nama Merchant\t: %s\nNama Produk\t: %s\nHarga\t\t: %.2f\n\n",
-            merchant.getNamaMerchant(), merchant.getNamaProduk(), merchant.getHargaMakanan());
+            tampilMerchant(merchant);
         }
     }
 
     static Merchant cariMerchant(String param) {
         for (Merchant merchant : merchants) if (merchant.getNamaMerchant() == param) return merchant;
+        
+        System.out.println("No record matching the provided data was found in the database. Please verify the data and try again\n");
         return null;
     }
 

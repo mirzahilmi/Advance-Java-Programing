@@ -5,11 +5,13 @@ package tid.geometry.specialshapes.two;
 
 public class Circle {
     private double rad;
-    private static int id;
+    private static int autoID;
+    private int id;
 
     public Circle(double rad) {
         this.rad = rad;
-        ++id;
+        ++autoID;
+        this.id = autoID;
     }
 
     public int getID() {
