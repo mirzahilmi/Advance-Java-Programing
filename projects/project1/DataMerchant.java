@@ -9,11 +9,13 @@ public class DataMerchant {
 // TI-D
 
     static Merchant merchants[] = new Merchant[0];
+    private static ScannerExtra scx = new ScannerExtra();
 
     // Another approach using ArrayList :
     // static ArrayList<Merchant> merchants = new ArrayList<Merchant>();
 
     static Merchant[] tambahMerchant(Merchant merchant) {
+        
         if (!isUnique(merchant) || merchant == null) {
             System.out.println("The provided data already exist in the database\n");
             return null;
@@ -30,11 +32,26 @@ public class DataMerchant {
         temp[temp.length - 1] = merchant;
         return temp;
     }
-
+    
     // Another approach with ArrayList Class available methods
     // static void tambahMerchant(Merchant merchant) {
     // merchants.add(merchant);
     // }
+
+    static Merchant[] tambahMerchant() {
+        Merchant merchant = new Merchant(scx.nextLine("Nama\t\t: "), scx.nextLine("Nama Produk\t: "), scx.nextDouble("Harga Makanan\t: "));
+
+        if (!isUnique(merchant) || merchant == null) {
+            System.out.println("The provided data already exist in the database\n");
+            return null;
+        }
+
+        Merchant temp[] = new Merchant[merchants.length + 1];
+        for (int i = 0; i < merchants.length; i++) temp[i] = merchants[i];
+
+        temp[temp.length - 1] = merchant;
+        return temp;
+    }
 
     static void tampilData() {
         for (Merchant merchant : merchants) {

@@ -20,16 +20,14 @@ public class Main {
         DataMerchant.merchants = DataMerchant.tambahMerchant(new Merchant
         ("Andawgius", "Croissant", 83_982_900.99));
 
-        ScannerExtra scx = new ScannerExtra();
-
-        Merchant merchant = new Merchant(scx.nextLine("Nama\t\t: "), scx.nextLine("Nama Produk\t: "), scx.nextDouble("Harga Makanan\t: "));
+        DataMerchant.merchants = DataMerchant.tambahMerchant();
         System.out.println();
-        
-        DataMerchant.merchants = DataMerchant.tambahMerchant(merchant);
 
         DataMerchant.tampilData();
 
         // Task 2 : Test cariMerchant & tampilMerchant method
+        Merchant merchant;
+
         merchant = DataMerchant.cariMerchant("Mercurious");
         DataMerchant.tampilMerchant(merchant);
 
