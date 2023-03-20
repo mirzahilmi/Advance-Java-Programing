@@ -1,0 +1,101 @@
+#1 ​Python tutorial for beginners 🐍
+#2 variables ✘
+#3 multiple assignment 🔠
+#4 string methods 〰️
+#5 type cast 💱
+#6 user input ⌨️
+#7 math functions 🧮
+#8 string slicing ✂️
+#9 if statements 🤔
+#10 logical operators 🔣
+#11 while loops 🔄
+#12 for loops ➰
+#13 nested loops ➿
+#14 break continue pass ⛔
+#15 lists 🧾
+#16 2D lists 📜
+#17 tuples 📄
+#18 sets 🍴
+#19 dictionaries 📖
+#20 indexing 📑
+#21 functions 📞
+#22 return statement 🔙
+#23 keyword arguments 🔑
+#24 nested function calls 🖇️
+#25 variable scope 🔬
+#26 *args 📦
+#27 **kwargs 🎁
+#28 string format 💬
+#29 random numbers 🎲
+#30 exception handling ⚠️
+#31 file detection 📁
+#32 read a file 🔍
+#33 write a file 📝
+#34 copy a file 🖨️
+#35 move a file 🗃️
+#36 delete a file 🗑️
+#37 modules 💌
+#38 rock, paper, scissors game 🗿
+#39 quiz game 💯
+#40 Object Oriented Programming (OOP) 🐍
+#41 class variables 🚗
+#42 inheritance 👪
+#43 multilevel inheritance 👴
+#44 multiple inheritance 👨‍👩‍👧‍👦
+#45 method overriding 🙅
+#46 method chaining ⛓️
+#47 super function 🦸
+#48 abstract classes 👻
+#49 objects as arguments 🏍️
+#50 duck typing 🦆
+#51 walrus operator 🦦
+#52 functions to variables 📛
+#53 higher order functions 👑
+#54 lambda λ
+#55 sort 🗄️
+#56 map 🗺️
+#57 filter 🍺
+#58 reduce ♻️
+#59 list comprehensions 📰
+#60 dictionary comprehensions 🕮
+#61 zip function 🤐
+#62 if name == '__main__' ❓
+#63 time module ⌚
+#64 threading 🧵
+#65 daemon threads 😈
+#66 multiprocessing ⚡
+#67 GUI windows 🖼️
+#68 labels 🏷️
+#69 buttons 🛎️
+#70 entrybox ⌨️
+#71 checkbox ✔️
+#72 radio buttons 🔘
+#73 scale 🌡️
+#74 listbox 📋
+#75 messagebox 💭
+#76 colorchooser 🎨
+#77 text area 📒
+#78 open a file (file dialog) 📁
+#79 save a file (file dialog) 💾
+#80 menubar 🧾
+#81 frames ⚰️
+#82 new windows 🗔
+#83 window tabs 📑
+#84 grid 🏢
+#85 progress bar 📊
+#86 canvas 🖍️
+#87 keyboard events ⌨️
+#88 mouse events 🖱️
+#89 drag & drop 👈
+#90 move images w/ keys 🏎️
+#91 animations 🛸
+#92 multiple animations 🎞️
+#93 clock program 🕒
+#94 send an email 📧
+#95 run with command prompt 👨‍💻
+#96 pip 🏗️
+#97 py to exe 🏃
+#98 calculator program 🖩
+#99 text editor program ✏️
+100 tic tac toe game ⭕
+101 snake game 🐍
