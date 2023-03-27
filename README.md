@@ -46,6 +46,7 @@ In this section, you can find all the assignments that were given during the cla
 * Assignment 4 - GeometryDemo v3.0.1
 * Assignment 5 - GeometryDemo v3.0.2
 * Assignment 6 - GeometryDemo v3.0.2 Revision
+* Assignment 7 - GeometryDemo v4.0
 
 ## Projects
 
