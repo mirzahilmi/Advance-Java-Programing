@@ -1,9 +1,9 @@
 package tid.geometry.ui;
 
-import tid.geometry.specialshapes.two.Circle;
+import tid.geometry.specialshapes.three.Circle;
 import java.util.Scanner;
 
-public class GeometryDemo_v3_0_2_Revision {
+public class GeometryDemo_v4_0 {
     public static void main(String[] args) {
         final String PROGRAM_NAME = "Geometry Demo v3.0.2 Revision";
         final String PROGRAM_AUTHOR = "by Mirza Hilmi Shodiq";

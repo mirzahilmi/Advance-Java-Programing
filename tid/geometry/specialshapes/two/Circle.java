@@ -6,15 +6,14 @@ package tid.geometry.specialshapes.two;
 public class Circle {
     private double rad;
     private static int autoID;
-    private int id;
+    private String id = "L";
 
     public Circle(double rad) {
         this.rad = rad;
-        ++autoID;
-        this.id = autoID;
+        this.id += ++autoID;
     }
 
-    public int getID() {
+    public String getID() {
         return id;
     }
 
