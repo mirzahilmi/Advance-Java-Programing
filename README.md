@@ -44,7 +44,8 @@ In this section, you can find all the assignments that were given during the cla
 * Assignment 2 - Point and Circle
 * Assignment 3 - GeometryDemo v1.0 & GeometryDemo v2.0
 * Assignment 4 - GeometryDemo v3.0.1
-* Assignment 5 - GeometryDemo v3.0.3
+* Assignment 5 - GeometryDemo v3.0.2
+* Assignment 6 - GeometryDemo v3.0.2 Revision
 
 ## Projects
 
