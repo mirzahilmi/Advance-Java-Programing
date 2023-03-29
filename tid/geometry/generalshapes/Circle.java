@@ -28,4 +28,8 @@ public class Circle {
         return Math.PI * Math.pow(this.rad, 2);
     }
 
+    public int getArea(int n) {
+        return (int) (Math.PI * Math.pow(this.rad, 2) * n);
+    }
+
 }
