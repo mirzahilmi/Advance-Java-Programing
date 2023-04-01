@@ -1,4 +1,4 @@
-package utp;
+package utp.test;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class ScannerExtra {
         System.out.print(log);
         return sc.nextInt();
     }
-    
+
     float nextFloat(String log) {
         System.out.print(log);
         return sc.nextFloat();

@@ -1,4 +1,4 @@
-package utp;
+package utp.test;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,8 +41,9 @@ public class Main {
                     System.out.println(BORDER);
 
                     for (int i = 0; i < Merchant.queues.length; i++) {
-                        if (Merchant.queues[i] == null) break;
-                        
+                        if (Merchant.queues[i] == null)
+                            break;
+
                         System.out.printf("\nName : %s\nPhone : %s\nLicense : %s",
                                 Merchant.queues[i].name, Merchant.queues[i].phoneNum, Merchant.queues[i].platNum);
 

@@ -1,4 +1,4 @@
-package utp;
+package utp.test;
 
 public class Queue {
     String name;
@@ -20,13 +20,14 @@ public class Queue {
             int choose = scx.nextInt("Masukkan nomor Layanan yang ingin ditambahkan : ");
             scx.nextLine();
 
-            if (scx.nextLine("Apakah anda masih ingin menambahkan layanan? ").equalsIgnoreCase("N")) continue;
+            if (scx.nextLine("Apakah anda masih ingin menambahkan layanan? ").equalsIgnoreCase("N"))
+                continue;
 
             this.services[i] = Service.getService(choose);
         }
 
-        for (int i = 0; i < services.length; i++) gross += services[i].price;
+        for (int i = 0; i < services.length; i++)
+            gross += services[i].price;
     }
-
 
 }

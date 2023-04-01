@@ -1,4 +1,4 @@
-package utp;
+package utp.test;
 
 public class Merchant {
     static private final String[] NAME = { "joko", "dengklek" };
@@ -23,7 +23,7 @@ public class Merchant {
         if (queueAmt >= 10)
             return;
 
-        queues[++queueAmt] = queue;
+        queues[queueAmt++] = queue;
     }
 
     static void logout() {

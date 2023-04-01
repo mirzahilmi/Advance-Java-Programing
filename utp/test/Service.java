@@ -1,4 +1,4 @@
-package utp;
+package utp.test;
 
 public class Service {
     int key;
@@ -12,11 +12,11 @@ public class Service {
     }
 
     static Service[] services = new Service[5];
-    
-    static private String[] names = {"Layanan Ganti Oli", "Layanan Operasi Mobil", "Layanan Ketok Magic",
-    "Layanan Modif Racing", "Layanan Modif Elektrik"};
 
-    static private int[] prices = {500_000, 2_000_000, 3_000_000, 5_000_000, 5_500_000};
+    static private String[] names = { "Layanan Ganti Oli", "Layanan Operasi Mobil", "Layanan Ketok Magic",
+            "Layanan Modif Racing", "Layanan Modif Elektrik" };
+
+    static private int[] prices = { 500_000, 2_000_000, 3_000_000, 5_000_000, 5_500_000 };
 
     static void loadData() {
         for (int i = 0; i < services.length; i++) {
@@ -30,7 +30,8 @@ public class Service {
 
     static Service getService(int number) {
         for (int i = 0; i < services.length; i++) {
-            if (services[i].key == number) return services[i];
+            if (services[i].key == number)
+                return services[i];
         }
 
         return null;
