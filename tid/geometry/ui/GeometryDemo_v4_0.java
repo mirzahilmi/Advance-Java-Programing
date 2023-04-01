@@ -1,7 +1,5 @@
 package tid.geometry.ui;
 
-import java.util.ArrayList;
-
 import tid.geometry.specialshapes.three.Circle;
 
 public class GeometryDemo_v4_0 {
@@ -11,8 +9,6 @@ public class GeometryDemo_v4_0 {
         final String PROGRAM_OPTION = "Ada berapa lingkaran yang akan dibuat? ";
         System.out.printf("%s\n%s\n%s\n\n",
                 PROGRAM_NAME, PROGRAM_AUTHOR, "=======================");
-
-        ArrayList<String> name = new ArrayList<String>();
 
         ScannerExtra scx = new ScannerExtra();
 

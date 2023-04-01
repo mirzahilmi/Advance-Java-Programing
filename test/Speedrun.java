@@ -32,8 +32,8 @@ public class Speedrun {
                     System.out.println(SEPARATOR);
                     break;
                 case "2":
-                kebun.area += scx.nextInt("Tambahkan Luas Tanah (hektar) : ");
-                    kebun.updateIncome(kebun.area , kebun.rate, kebun.itemPrice,
+                    kebun.area += scx.nextInt("Tambahkan Luas Tanah (hektar) : ");
+                    kebun.updateIncome(kebun.area, kebun.rate, kebun.itemPrice,
                             kebun.fee);
                     scx.nextLine();
                     System.out.println(SEPARATOR_THIN);
@@ -51,6 +51,7 @@ public class Speedrun {
                     System.out.println(SEPARATOR);
                     break;
                 default:
+                    active = false;
             }
         }
     }
