@@ -3,7 +3,7 @@ package projects.project2;
 import java.util.ArrayList;
 
 public class RentArchive {
-    final String LINE = "------------------------";
+    final private String LINE = "------------------------";
 
     ArrayList<CarRent> rentData = new ArrayList<CarRent>();
 

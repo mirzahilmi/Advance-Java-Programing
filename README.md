@@ -47,12 +47,14 @@ In this section, you can find all the assignments that were given during the cla
 * Assignment 5 - GeometryDemo v3.0.2
 * Assignment 6 - GeometryDemo v3.0.2 Revision
 * Assignment 7 - GeometryDemo v4.0
+* Assignment 8 - UTS: Growing Circle v1.0
 
 ## Projects
 
 In this section, you can find all the projects that were assigned during the class, along with their respective instructions and solutions.
 
 * Project 1 - Encapsulation Merchant Data
+* Project 2 - Introduction: ArrayList
 
 ## Other Resources
 
