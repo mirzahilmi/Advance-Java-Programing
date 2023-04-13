@@ -1,9 +1,9 @@
 package projects.project2;
 
 class CarRent {
-    CarRider rider;
-    Car car;
-    int rentDur;
+    private CarRider rider;
+    private Car car;
+    private int rentDur;
 
     CarRent(CarRider rider, Car car, int rentDur) {
         this.rider = rider;

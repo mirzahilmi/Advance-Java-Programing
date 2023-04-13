@@ -20,5 +20,5 @@ public class Main {
         arsip.rent(ling, data.carList.get(1), 1);
 
         arsip.info();
-    }   
+    }
 }

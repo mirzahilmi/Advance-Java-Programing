@@ -21,7 +21,8 @@ public class RentArchive {
 
         for (CarRent carRent : rentData) {
             System.out.printf("\nNAMA PEMINJAM\t: %s\nTIPE MOBIL\t: %s\nNO. POLISI\t: %s\nLAMA RENTAL\t: %d\n%s",
-                    carRent.rider.getName(), carRent.car.getCarType(), carRent.car.getPolNum(), carRent.rentDur, LINE);
+                    carRent.getRider().getName(), carRent.getCar().getCarType(), carRent.getCar().getPolNum(),
+                    carRent.getRentDur(), LINE);
         }
     }
 }
