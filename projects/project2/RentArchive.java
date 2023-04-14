@@ -24,5 +24,7 @@ public class RentArchive {
                     carRent.getRider().getName(), carRent.getCar().getCarType(), carRent.getCar().getPolNum(),
                     carRent.getRentDur(), LINE);
         }
+
+        System.out.println();
     }
 }

@@ -19,5 +19,14 @@ class CarData {
             car.getCarType(), car.getPolNum(),car.getMerk(), LINE);
         }
 
+        System.out.println();
+    }
+
+    Car getCar(String PolNum) {
+        for (Car car : carList) {
+            if (car.getPolNum().equals(PolNum)) return car;
+        }
+
+        return null;
     }
 }
