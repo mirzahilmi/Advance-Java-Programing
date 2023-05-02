@@ -4,38 +4,39 @@ package tid.geometry.specialshapes.three;
 // 225150707111067
 
 public class Circle {
-    private double rad;
-    private static int autoID;
-    private String id = "L";
-    private Point pO;
 
-    public Circle(double rad, int x, int y) {
-        this.rad = rad;
-        this.id += ++autoID;
-        this.pO = new Point(x, y);
-    }
+  private double rad;
+  private static int autoID;
+  private String id = "L";
+  private Point pO;
 
-    public String getID() {
-        return this.id;
-    }
+  public Circle(double rad, int x, int y) {
+    this.rad = rad;
+    this.id += ++autoID;
+    this.pO = new Point(x, y);
+  }
 
-    public double getRad() {
-        return this.rad;
-    }
+  public String getID() {
+    return this.id;
+  }
 
-    public int getXo() {
-        return this.pO.getXO();
-    }
+  public double getRad() {
+    return this.rad;
+  }
 
-    public int getYo() {
-        return this.pO.getYO();
-    }
+  public int getXo() {
+    return this.pO.getXO();
+  }
 
-    public double getCircumference() {
-        return 2 * Math.PI * this.rad;
-    }
+  public int getYo() {
+    return this.pO.getYO();
+  }
 
-    public double getArea() {
-        return Math.PI * Math.pow(this.rad, 2);
-    }
+  public double getCircumference() {
+    return 2 * Math.PI * this.rad;
+  }
+
+  public double getArea() {
+    return Math.PI * Math.pow(this.rad, 2);
+  }
 }

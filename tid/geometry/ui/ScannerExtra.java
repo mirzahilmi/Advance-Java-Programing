@@ -6,33 +6,34 @@ import java.util.Scanner;
 // Made by github.com/MirzaHilmi for fun.
 
 public class ScannerExtra {
-    private Scanner sc = new Scanner(System.in);
 
-    String nextLine(String log) {
-        System.out.print(log);
-        return sc.nextLine();
-    }
+  private Scanner sc = new Scanner(System.in);
 
-    int nextInt(String log) {
-        System.out.print(log);
-        return sc.nextInt();
-    }
-    
-    float nextFloat(String log) {
-        System.out.print(log);
-        return sc.nextFloat();
-    }
+  String nextLine(String log) {
+    System.out.print(log);
+    return sc.nextLine();
+  }
 
-    double nextDouble(String log) {
-        System.out.print(log);
-        return sc.nextDouble();
-    }
+  int nextInt(String log) {
+    System.out.print(log);
+    return sc.nextInt();
+  }
 
-    String nextLine() {
-        return sc.nextLine();
-    }
+  float nextFloat(String log) {
+    System.out.print(log);
+    return sc.nextFloat();
+  }
 
-    void close() {
-        sc.close();
-    }
+  double nextDouble(String log) {
+    System.out.print(log);
+    return sc.nextDouble();
+  }
+
+  String nextLine() {
+    return sc.nextLine();
+  }
+
+  void close() {
+    sc.close();
+  }
 }

@@ -1,48 +1,48 @@
 package projects.project2;
 
 class Car {
-    private String carType;
-    private String polNum;
-    private String merk;
-    private boolean status;
 
-    Car(String carType, String polNum, String merk, boolean status) {
-        this.carType = carType;
-        this.polNum = polNum;
-        this.merk = merk;
-        this.status = status;
-    }
+  private String carType;
+  private String polNum;
+  private String merk;
+  private boolean status;
 
-    void setCarType(String carType) {
-        this.carType = carType;
-    }
+  Car(String carType, String polNum, String merk, boolean status) {
+    this.carType = carType;
+    this.polNum = polNum;
+    this.merk = merk;
+    this.status = status;
+  }
 
-    void setPolNum(String polNum) {
-        this.polNum = polNum;
-    }
+  void setCarType(String carType) {
+    this.carType = carType;
+  }
 
-    void setMerk(String merk) {
-        this.merk = merk;
-    }
+  void setPolNum(String polNum) {
+    this.polNum = polNum;
+  }
 
-    void setStatus(boolean status) {
-        this.status = status;
-    }
+  void setMerk(String merk) {
+    this.merk = merk;
+  }
 
-    String getCarType() {
-        return this.carType;
-    }
+  void setStatus(boolean status) {
+    this.status = status;
+  }
 
-    String getPolNum() {
-        return this.polNum;
-    }
+  String getCarType() {
+    return this.carType;
+  }
 
-    String getMerk() {
-        return this.merk;
-    }
+  String getPolNum() {
+    return this.polNum;
+  }
 
-    boolean isStatus() {
-        return this.status;
-    }
+  String getMerk() {
+    return this.merk;
+  }
 
+  boolean isStatus() {
+    return this.status;
+  }
 }

@@ -1,27 +1,28 @@
 package tid.geometry.specialshapes.one;
 
 public class Circle {
-    private double rad;
-    private int id;
 
-    public Circle(double rad, int id) {
-        this.rad = rad;
-        this.id = id;
-    }
+  private double rad;
+  private int id;
 
-    public int getID() {
-        return id;
-    }
+  public Circle(double rad, int id) {
+    this.rad = rad;
+    this.id = id;
+  }
 
-    public double getRad() {
-        return this.rad;
-    }
+  public int getID() {
+    return id;
+  }
 
-    public double getCircumference() {
-        return 2 * Math.PI * this.rad;
-    }
+  public double getRad() {
+    return this.rad;
+  }
 
-    public double getArea() {
-        return Math.PI * Math.pow(this.rad, 2);
-    }
+  public double getCircumference() {
+    return 2 * Math.PI * this.rad;
+  }
+
+  public double getArea() {
+    return Math.PI * Math.pow(this.rad, 2);
+  }
 }

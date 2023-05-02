@@ -1,27 +1,28 @@
 package test;
 
 public class Car {
-    private String brand;
-    private int productionYear;
 
-    Car(String brand, int productionYear) {
-        this.brand = brand;
-        this.productionYear = productionYear;
-    }
+  private String brand;
+  private int productionYear;
 
-    void setBrand(String brand) {
-        this.brand = brand;
-    }
+  Car(String brand, int productionYear) {
+    this.brand = brand;
+    this.productionYear = productionYear;
+  }
 
-    void setProductionYear(int productionYear) {
-        this.productionYear = productionYear;
-    }
+  void setBrand(String brand) {
+    this.brand = brand;
+  }
 
-    String getBrand() {
-        return this.brand;
-    }
+  void setProductionYear(int productionYear) {
+    this.productionYear = productionYear;
+  }
 
-    int getProductionYear() {
-        return this.productionYear;
-    }
+  String getBrand() {
+    return this.brand;
+  }
+
+  int getProductionYear() {
+    return this.productionYear;
+  }
 }

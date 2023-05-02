@@ -1,27 +1,28 @@
 package tid.geometry.specialshapes.three;
 
 public class Point {
-    private int x;
-    private int y;
 
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+  private int x;
+  private int y;
 
-    public void setXO(int x) {
-        this.x = x;
-    }
+  public Point(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
 
-    public void setYO(int y) {
-        this.y = y;
-    }
+  public void setXO(int x) {
+    this.x = x;
+  }
 
-    public int getXO() {
-        return this.x;
-    }
+  public void setYO(int y) {
+    this.y = y;
+  }
 
-    public int getYO() {
-        return this.y;
-    }
+  public int getXO() {
+    return this.x;
+  }
+
+  public int getYO() {
+    return this.y;
+  }
 }

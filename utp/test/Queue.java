@@ -1,33 +1,37 @@
 package utp.test;
 
 public class Queue {
-    String name;
-    String phoneNum;
-    String platNum;
 
-    Service[] services = new Service[3];
+  String name;
+  String phoneNum;
+  String platNum;
 
-    int gross;
+  Service[] services = new Service[3];
 
-    private ScannerExtra scx = new ScannerExtra();
+  int gross;
 
-    Queue(String name, String phoneNum, String platNum) {
-        this.name = name;
-        this.phoneNum = phoneNum;
-        this.platNum = platNum;
+  private ScannerExtra scx = new ScannerExtra();
 
-        for (int i = 0; i < 3; i++) {
-            int choose = scx.nextInt("Masukkan nomor Layanan yang ingin ditambahkan : ");
-            scx.nextLine();
+  Queue(String name, String phoneNum, String platNum) {
+    this.name = name;
+    this.phoneNum = phoneNum;
+    this.platNum = platNum;
 
-            if (scx.nextLine("Apakah anda masih ingin menambahkan layanan? ").equalsIgnoreCase("N"))
-                continue;
+    for (int i = 0; i < 3; i++) {
+      int choose = scx.nextInt(
+        "Masukkan nomor Layanan yang ingin ditambahkan : "
+      );
+      scx.nextLine();
 
-            this.services[i] = Service.getService(choose);
-        }
+      if (
+        scx
+          .nextLine("Apakah anda masih ingin menambahkan layanan? ")
+          .equalsIgnoreCase("N")
+      ) continue;
 
-        for (int i = 0; i < services.length; i++)
-            gross += services[i].price;
+      this.services[i] = Service.getService(choose);
     }
 
+    for (int i = 0; i < services.length; i++) gross += services[i].price;
+  }
 }

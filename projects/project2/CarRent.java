@@ -1,37 +1,38 @@
 package projects.project2;
 
 class CarRent {
-    private CarRider rider;
-    private Car car;
-    private int rentDur;
 
-    CarRent(CarRider rider, Car car, int rentDur) {
-        this.rider = rider;
-        this.car = car;
-        this.rentDur = rentDur;
-    }
+  private CarRider rider;
+  private Car car;
+  private int rentDur;
 
-    void setRider(CarRider rider) {
-        this.rider = rider;
-    }
+  CarRent(CarRider rider, Car car, int rentDur) {
+    this.rider = rider;
+    this.car = car;
+    this.rentDur = rentDur;
+  }
 
-    void setCar(Car car) {
-        this.car = car;
-    }
+  void setRider(CarRider rider) {
+    this.rider = rider;
+  }
 
-    void setRentDur(int rentDur) {
-        this.rentDur = rentDur;
-    }
+  void setCar(Car car) {
+    this.car = car;
+  }
 
-    CarRider getRider() {
-        return this.rider;
-    }
+  void setRentDur(int rentDur) {
+    this.rentDur = rentDur;
+  }
 
-    Car getCar() {
-        return this.car;
-    }
+  CarRider getRider() {
+    return this.rider;
+  }
 
-    int getRentDur() {
-        return this.rentDur;
-    }
+  Car getCar() {
+    return this.car;
+  }
+
+  int getRentDur() {
+    return this.rentDur;
+  }
 }

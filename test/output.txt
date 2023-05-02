@@ -1,101 +1,396 @@
-* Lecture 1 ​Python tutorial for beginners 🐍
-* Lecture 2 variables ✘
-* Lecture 3 multiple assignment 🔠
-* Lecture 4 string methods 〰️
-* Lecture 5 type cast 💱
-* Lecture 6 user input ⌨️
-* Lecture 7 math functions 🧮
-* Lecture 8 string slicing ✂️
-* Lecture 9 if statements 🤔
-* Lecture 10 logical operators 🔣
-* Lecture 11 while loops 🔄
-* Lecture 12 for loops ➰
-* Lecture 13 nested loops ➿
-* Lecture 14 break continue pass ⛔
-* Lecture 15 lists 🧾
-* Lecture 16 2D lists 📜
-* Lecture 17 tuples 📄
-* Lecture 18 sets 🍴
-* Lecture 19 dictionaries 📖
-* Lecture 20 indexing 📑
-* Lecture 21 functions 📞
-* Lecture 22 return statement 🔙
-* Lecture 23 keyword arguments 🔑
-* Lecture 24 nested function calls 🖇️
-* Lecture 25 variable scope 🔬
-* Lecture 26 *args 📦
-* Lecture 27 **kwargs 🎁
-* Lecture 28 string format 💬
-* Lecture 29 random numbers 🎲
-* Lecture 30 exception handling ⚠️
-* Lecture 31 file detection 📁
-* Lecture 32 read a file 🔍
-* Lecture 33 write a file 📝
-* Lecture 34 copy a file 🖨️
-* Lecture 35 move a file 🗃️
-* Lecture 36 delete a file 🗑️
-* Lecture 37 modules 💌
-* Lecture 38 rock, paper, scissors game 🗿
-* Lecture 39 quiz game 💯
-* Lecture 40 Object Oriented Programming (OOP) 🐍
-* Lecture 41 class variables 🚗
-* Lecture 42 inheritance 👪
-* Lecture 43 multilevel inheritance 👴
-* Lecture 44 multiple inheritance 👨‍👩‍👧‍👦
-* Lecture 45 method overriding 🙅
-* Lecture 46 method chaining ⛓️
-* Lecture 47 super function 🦸
-* Lecture 48 abstract classes 👻
-* Lecture 49 objects as arguments 🏍️
-* Lecture 50 duck typing 🦆
-* Lecture 51 walrus operator 🦦
-* Lecture 52 functions to variables 📛
-* Lecture 53 higher order functions 👑
-* Lecture 54 lambda λ
-* Lecture 55 sort 🗄️
-* Lecture 56 map 🗺️
-* Lecture 57 filter 🍺
-* Lecture 58 reduce ♻️
-* Lecture 59 list comprehensions 📰
-* Lecture 60 dictionary comprehensions 🕮
-* Lecture 61 zip function 🤐
-* Lecture 62 if name == '__main__' ❓
-* Lecture 63 time module ⌚
-* Lecture 64 threading 🧵
-* Lecture 65 daemon threads 😈
-* Lecture 66 multiprocessing ⚡
-* Lecture 67 GUI windows 🖼️
-* Lecture 68 labels 🏷️
-* Lecture 69 buttons 🛎️
-* Lecture 70 entrybox ⌨️
-* Lecture 71 checkbox ✔️
-* Lecture 72 radio buttons 🔘
-* Lecture 73 scale 🌡️
-* Lecture 74 listbox 📋
-* Lecture 75 messagebox 💭
-* Lecture 76 colorchooser 🎨
-* Lecture 77 text area 📒
-* Lecture 78 open a file (file dialog) 📁
-* Lecture 79 save a file (file dialog) 💾
-* Lecture 80 menubar 🧾
-* Lecture 81 frames ⚰️
-* Lecture 82 new windows 🗔
-* Lecture 83 window tabs 📑
-* Lecture 84 grid 🏢
-* Lecture 85 progress bar 📊
-* Lecture 86 canvas 🖍️
-* Lecture 87 keyboard events ⌨️
-* Lecture 88 mouse events 🖱️
-* Lecture 89 drag & drop 👈
-* Lecture 90 move images w/ keys 🏎️
-* Lecture 91 animations 🛸
-* Lecture 92 multiple animations 🎞️
-* Lecture 93 clock program 🕒
-* Lecture 94 send an email 📧
-* Lecture 95 run with command prompt 👨‍💻
-* Lecture 96 pip 🏗️
-* Lecture 97 py to exe 🏃
-* Lecture 98 calculator program 🖩
-* Lecture 99 text editor program ✏️
-* Lecture 100 tic tac toe game ⭕
-* Lecture 101 snake game 🐍
+.text-neutral-50 {
+	color: $neutral-50 !important
+}
+.bg-neutral-50 {
+	background: $neutral-50 !important
+}
+.text-neutral-100 {
+	color: $neutral-100 !important
+}
+.bg-neutral-100 {
+	background: $neutral-100 !important
+}
+.text-neutral-200 {
+	color: $neutral-200 !important
+}
+.bg-neutral-200 {
+	background: $neutral-200 !important
+}
+.text-neutral-300 {
+	color: $neutral-300 !important
+}
+.bg-neutral-300 {
+	background: $neutral-300 !important
+}
+.text-neutral-400 {
+	color: $neutral-400 !important
+}
+.bg-neutral-400 {
+	background: $neutral-400 !important
+}
+.text-neutral-500 {
+	color: $neutral-500 !important
+}
+.bg-neutral-500 {
+	background: $neutral-500 !important
+}
+.text-neutral-600 {
+	color: $neutral-600 !important
+}
+.bg-neutral-600 {
+	background: $neutral-600 !important
+}
+.text-neutral-700 {
+	color: $neutral-700 !important
+}
+.bg-neutral-700 {
+	background: $neutral-700 !important
+}
+.text-neutral-800 {
+	color: $neutral-800 !important
+}
+.bg-neutral-800 {
+	background: $neutral-800 !important
+}
+.text-neutral-900 {
+	color: $neutral-900 !important
+}
+.bg-neutral-900 {
+	background: $neutral-900 !important
+}
+.text-text-50 {
+	color: $text-50 !important
+}
+.bg-text-50 {
+	background: $text-50 !important
+}
+.text-text-100 {
+	color: $text-100 !important
+}
+.bg-text-100 {
+	background: $text-100 !important
+}
+.text-text-200 {
+	color: $text-200 !important
+}
+.bg-text-200 {
+	background: $text-200 !important
+}
+.text-shade-50 {
+	color: $shade-50 !important
+}
+.bg-shade-50 {
+	background: $shade-50 !important
+}
+.text-shade-100 {
+	color: $shade-100 !important
+}
+.bg-shade-100 {
+	background: $shade-100 !important
+}
+.text-background-50 {
+	color: $background-50 !important
+}
+.bg-background-50 {
+	background: $background-50 !important
+}
+.text-a-primary-50 {
+	color: $a-primary-50 !important
+}
+.bg-a-primary-50 {
+	background: $a-primary-50 !important
+}
+.text-a-primary-300 {
+	color: $a-primary-300 !important
+}
+.bg-a-primary-300 {
+	background: $a-primary-300 !important
+}
+.text-a-primary-500 {
+	color: $a-primary-500 !important
+}
+.bg-a-primary-500 {
+	background: $a-primary-500 !important
+}
+.text-a-primary-700 {
+	color: $a-primary-700 !important
+}
+.bg-a-primary-700 {
+	background: $a-primary-700 !important
+}
+.text-a-primary-900 {
+	color: $a-primary-900 !important
+}
+.bg-a-primary-900 {
+	background: $a-primary-900 !important
+}
+.text-a-secondary-50 {
+	color: $a-secondary-50 !important
+}
+.bg-a-secondary-50 {
+	background: $a-secondary-50 !important
+}
+.text-a-secondary-300 {
+	color: $a-secondary-300 !important
+}
+.bg-a-secondary-300 {
+	background: $a-secondary-300 !important
+}
+.text-a-secondary-500 {
+	color: $a-secondary-500 !important
+}
+.bg-a-secondary-500 {
+	background: $a-secondary-500 !important
+}
+.text-a-secondary-700 {
+	color: $a-secondary-700 !important
+}
+.bg-a-secondary-700 {
+	background: $a-secondary-700 !important
+}
+.text-a-secondary-900 {
+	color: $a-secondary-900 !important
+}
+.bg-a-secondary-900 {
+	background: $a-secondary-900 !important
+}
+.text-a-success-50 {
+	color: $a-success-50 !important
+}
+.bg-a-success-50 {
+	background: $a-success-50 !important
+}
+.text-a-success-300 {
+	color: $a-success-300 !important
+}
+.bg-a-success-300 {
+	background: $a-success-300 !important
+}
+.text-a-success-500 {
+	color: $a-success-500 !important
+}
+.bg-a-success-500 {
+	background: $a-success-500 !important
+}
+.text-a-success-700 {
+	color: $a-success-700 !important
+}
+.bg-a-success-700 {
+	background: $a-success-700 !important
+}
+.text-a-success-900 {
+	color: $a-success-900 !important
+}
+.bg-a-success-900 {
+	background: $a-success-900 !important
+}
+.text-a-warning-50 {
+	color: $a-warning-50 !important
+}
+.bg-a-warning-50 {
+	background: $a-warning-50 !important
+}
+.text-a-warning-300 {
+	color: $a-warning-300 !important
+}
+.bg-a-warning-300 {
+	background: $a-warning-300 !important
+}
+.text-a-warning-500 {
+	color: $a-warning-500 !important
+}
+.bg-a-warning-500 {
+	background: $a-warning-500 !important
+}
+.text-a-warning-700 {
+	color: $a-warning-700 !important
+}
+.bg-a-warning-700 {
+	background: $a-warning-700 !important
+}
+.text-a-warning-900 {
+	color: $a-warning-900 !important
+}
+.bg-a-warning-900 {
+	background: $a-warning-900 !important
+}
+.text-a-error-50 {
+	color: $a-error-50 !important
+}
+.bg-a-error-50 {
+	background: $a-error-50 !important
+}
+.text-a-error-300 {
+	color: $a-error-300 !important
+}
+.bg-a-error-300 {
+	background: $a-error-300 !important
+}
+.text-a-error-500 {
+	color: $a-error-500 !important
+}
+.bg-a-error-500 {
+	background: $a-error-500 !important
+}
+.text-a-error-700 {
+	color: $a-error-700 !important
+}
+.bg-a-error-700 {
+	background: $a-error-700 !important
+}
+.text-a-error-900 {
+	color: $a-error-900 !important
+}
+.bg-a-error-900 {
+	background: $a-error-900 !important
+}
+.text-v-primary-50 {
+	color: $v-primary-50 !important
+}
+.bg-v-primary-50 {
+	background: $v-primary-50 !important
+}
+.text-v-primary-300 {
+	color: $v-primary-300 !important
+}
+.bg-v-primary-300 {
+	background: $v-primary-300 !important
+}
+.text-v-primary-500 {
+	color: $v-primary-500 !important
+}
+.bg-v-primary-500 {
+	background: $v-primary-500 !important
+}
+.text-v-primary-300 {
+	color: $v-primary-300 !important
+}
+.bg-v-primary-300 {
+	background: $v-primary-300 !important
+}
+.text-v-primary-400 {
+	color: $v-primary-400 !important
+}
+.bg-v-primary-400 {
+	background: $v-primary-400 !important
+}
+.text-v-secondary-50 {
+	color: $v-secondary-50 !important
+}
+.bg-v-secondary-50 {
+	background: $v-secondary-50 !important
+}
+.text-v-secondary-300 {
+	color: $v-secondary-300 !important
+}
+.bg-v-secondary-300 {
+	background: $v-secondary-300 !important
+}
+.text-v-secondary-500 {
+	color: $v-secondary-500 !important
+}
+.bg-v-secondary-500 {
+	background: $v-secondary-500 !important
+}
+.text-v-secondary-700 {
+	color: $v-secondary-700 !important
+}
+.bg-v-secondary-700 {
+	background: $v-secondary-700 !important
+}
+.text-v-secondary-900 {
+	color: $v-secondary-900 !important
+}
+.bg-v-secondary-900 {
+	background: $v-secondary-900 !important
+}
+.text-v-success-50 {
+	color: $v-success-50 !important
+}
+.bg-v-success-50 {
+	background: $v-success-50 !important
+}
+.text-v-success-300 {
+	color: $v-success-300 !important
+}
+.bg-v-success-300 {
+	background: $v-success-300 !important
+}
+.text-v-success-500 {
+	color: $v-success-500 !important
+}
+.bg-v-success-500 {
+	background: $v-success-500 !important
+}
+.text-v-success-700 {
+	color: $v-success-700 !important
+}
+.bg-v-success-700 {
+	background: $v-success-700 !important
+}
+.text-v-success-900 {
+	color: $v-success-900 !important
+}
+.bg-v-success-900 {
+	background: $v-success-900 !important
+}
+.text-v-warning-50 {
+	color: $v-warning-50 !important
+}
+.bg-v-warning-50 {
+	background: $v-warning-50 !important
+}
+.text-v-warning-300 {
+	color: $v-warning-300 !important
+}
+.bg-v-warning-300 {
+	background: $v-warning-300 !important
+}
+.text-v-warning-500 {
+	color: $v-warning-500 !important
+}
+.bg-v-warning-500 {
+	background: $v-warning-500 !important
+}
+.text-v-warning-700 {
+	color: $v-warning-700 !important
+}
+.bg-v-warning-700 {
+	background: $v-warning-700 !important
+}
+.text-v-warning-900 {
+	color: $v-warning-900 !important
+}
+.bg-v-warning-900 {
+	background: $v-warning-900 !important
+}
+.text-v-error-50 {
+	color: $v-error-50 !important
+}
+.bg-v-error-50 {
+	background: $v-error-50 !important
+}
+.text-v-error-300 {
+	color: $v-error-300 !important
+}
+.bg-v-error-300 {
+	background: $v-error-300 !important
+}
+.text-v-error-500 {
+	color: $v-error-500 !important
+}
+.bg-v-error-500 {
+	background: $v-error-500 !important
+}
+.text-v-error-700 {
+	color: $v-error-700 !important
+}
+.bg-v-error-700 {
+	background: $v-error-700 !important
+}
+.text-v-error-900 {
+	color: $v-error-900 !important
+}
+.bg-v-error-900 {
+	background: $v-error-900 !important
+}

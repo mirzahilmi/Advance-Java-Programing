@@ -4,37 +4,38 @@ package tid.geometry.generalshapes;
 // 225150707111067
 
 public class Rectangle {
-    private int length;
-    private int width;
 
-    public Rectangle() {}
+  private int length;
+  private int width;
 
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
-    }
+  public Rectangle() {}
 
-    public int getLength() {
-        return this.length;
-    }
+  public Rectangle(int length, int width) {
+    this.length = length;
+    this.width = width;
+  }
 
-    public int getWidth() {
-        return this.width;
-    }
+  public int getLength() {
+    return this.length;
+  }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
+  public int getWidth() {
+    return this.width;
+  }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
+  public void setLength(int length) {
+    this.length = length;
+  }
 
-    public int getArea() {
-        return this.length * this.width;
-    }
+  public void setWidth(int width) {
+    this.width = width;
+  }
 
-    public int getCircumference() {
-        return (2 * this.length) + (2 * this.width);
-    }
+  public int getArea() {
+    return this.length * this.width;
+  }
+
+  public int getCircumference() {
+    return (2 * this.length) + (2 * this.width);
+  }
 }

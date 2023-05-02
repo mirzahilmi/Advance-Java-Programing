@@ -4,28 +4,29 @@ package tid.geometry.specialshapes.two;
 // 225150707111067
 
 public class Circle {
-    private double rad;
-    private static int autoID;
-    private String id = "L";
 
-    public Circle(double rad) {
-        this.rad = rad;
-        this.id += ++autoID;
-    }
+  private double rad;
+  private static int autoID;
+  private String id = "L";
 
-    public String getID() {
-        return id;
-    }
+  public Circle(double rad) {
+    this.rad = rad;
+    this.id += ++autoID;
+  }
 
-    public double getRad() {
-        return this.rad;
-    }
+  public String getID() {
+    return id;
+  }
 
-    public double getCircumference() {
-        return 2 * Math.PI * this.rad;
-    }
+  public double getRad() {
+    return this.rad;
+  }
 
-    public double getArea() {
-        return Math.PI * Math.pow(this.rad, 2);
-    }
+  public double getCircumference() {
+    return 2 * Math.PI * this.rad;
+  }
+
+  public double getArea() {
+    return Math.PI * Math.pow(this.rad, 2);
+  }
 }

@@ -1,43 +1,45 @@
 package test;
+
 public class Human {
-    private int id;
-    private String name;
-    private int yearOfBirth;
-    private String interest;
 
-    Human(int max) {
-        this.id = (int)(Math.random() * (max - 1)) + 1;
-    }
+  private int id;
+  private String name;
+  private int yearOfBirth;
+  private String interest;
 
-    void breath() {
-        System.out.printf("\tBernafas...");
-    }
+  Human(int max) {
+    this.id = (int) (Math.random() * (max - 1)) + 1;
+  }
 
-    void setName(String name) {
-        this.name = name;
-    }
+  void breath() {
+    System.out.printf("\tBernafas...");
+  }
 
-    void setYearOfBirth(int year) {
-        this.yearOfBirth = year;
-    }
+  void setName(String name) {
+    this.name = name;
+  }
 
-    void setInterest(String interest) {
-        this.interest = interest;
-    }
+  void setYearOfBirth(int year) {
+    this.yearOfBirth = year;
+  }
 
-    String getName() {
-        return this.name;
-    }
+  void setInterest(String interest) {
+    this.interest = interest;
+  }
 
-    int getYearOfBirth() {
-        return this.yearOfBirth;
-    }
+  String getName() {
+    return this.name;
+  }
 
-    int getID() {
-        return this.id;
-    }
+  int getYearOfBirth() {
+    return this.yearOfBirth;
+  }
 
-    String getInterest() {
-        return this.interest;
-    }
+  int getID() {
+    return this.id;
+  }
+
+  String getInterest() {
+    return this.interest;
+  }
 }
