@@ -43,9 +43,9 @@ public class Pekerja extends Manusia {
     }
 
     public void setBonus() {
-        this.bonus = (((hariKerja - (hariKerja % 5)) * jamKerja * 15)
-                + (((hariKerja - (hariKerja % 5)) * (jamKerja - 7) * 7))
-                + ((hariKerja % 5) * jamKerja * 20));
+        // Rumus bonus lembur = total hari kerja bukan libur * jam kerja diatas 7 jam * 7
+        this.bonus = (((this.hariKerja - (this. hariKerja % 5)) * (this.jamKerja - 7) * 7)
+                + ((this.hariKerja % 5) * this.jamKerja * 20));
     }
 
     public void setJamKerja(int jamKerja) {
@@ -97,14 +97,8 @@ public class Pekerja extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "Nama\t\t\t: %s\nNIK\t\t\t: %s\nJenis Kelamin\t: %s\nPendapatan\t\t\t: %.1f$\nBonus\t\t\t: %.1f$\nGaji\t\t\t: %s$\nStatus\t\t\t: %s",
-                this.getNama(),
-                this.getNIK(),
-                this.getJenisKelamin() ? "Laki-Laki" : "Perempuan",
-                this.getPendapatan(),
-                this.getBonus(),
-                this.getGaji(),
-                this.getStatus()
+                "%s\nBonus\t\t\t: %.1f$\nGaji\t\t\t: %s$\nStatus\t\t\t: %s",
+                super.toString(), this.getBonus(), this.getGaji(), this.getStatus()
         );
     }
 }

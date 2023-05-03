@@ -5,14 +5,7 @@ public class MahasiswaFilkom extends Manusia {
     private String NIM;
     private double IPK;
 
-    public MahasiswaFilkom(
-            String nama,
-            String NIK,
-            boolean jenisKelamin,
-            boolean menikah,
-            String NIM,
-            double IPK
-    ) {
+    public MahasiswaFilkom(String nama, String NIK, boolean jenisKelamin, boolean menikah, String NIM, double IPK) {
         super(nama, NIK, jenisKelamin, menikah);
         this.NIM = NIM;
         this.IPK = IPK;
@@ -51,9 +44,7 @@ public class MahasiswaFilkom extends Manusia {
     public double getBeasiswa() {
         double ipk = this.getIPK();
 
-        return (ipk >= 3.0 && ipk <= 3.5)
-                ? 50.0
-                : (ipk > 3.5 && ipk <= 4.0) ? 75.0 : 0.0;
+        return (ipk >= 3.0 && ipk <= 3.5) ? 50.0 : (ipk > 3.5 && ipk <= 4.0) ? 75.0 : 0.0;
     }
 
     @Override
@@ -64,14 +55,8 @@ public class MahasiswaFilkom extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "Nama\t\t\t: %s\nNIK\t\t\t: %s\nJenis Kelamin\t: %s\nPendapatan\t\t\t: %.1f$\nIPK\t\t\t: %.1f\nNIM\t\t\t: %s\nStatus\t\t\t: %s",
-                this.getNama(),
-                this.getNIK(),
-                this.getJenisKelamin() ? "Laki-Laki" : "Perempuan",
-                this.getPendapatan(),
-                this.getIPK(),
-                this.getNIM(),
-                this.getStatus()
+                "%s\nIPK\t\t\t: %.1f\nNIM\t\t\t: %s\nStatus\t\t\t: %s",
+                super.toString(), this.getIPK(), this.getNIM(), this.getStatus()
         );
     }
 }

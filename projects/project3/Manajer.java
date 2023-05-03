@@ -19,16 +19,6 @@ public class Manajer extends Pekerja{
 
     @Override
     public String toString() {
-        return String.format(
-                "Nama\t\t\t: %s\nNIK\t\t\t: %s\nJenis Kelamin\t: %s\nPendapatan\t\t\t: %.1f$\nBonus\t\t\t: %.1f$\nGaji\t\t\t: %s$\nStatus\t\t\t: %s\nLama Kerja\t\t\t: %d",
-                this.getNama(),
-                this.getNIK(),
-                this.getJenisKelamin() ? "Laki-Laki" : "Perempuan",
-                this.getPendapatan(),
-                this.getBonus(),
-                this.getGaji(),
-                this.getStatus(),
-                this.getLamaKerja()
-        );
+        return String.format("%s\n%s", super.toString(), this.getLamaKerja());
     }
 }
