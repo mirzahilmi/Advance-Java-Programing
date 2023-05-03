@@ -59,6 +59,7 @@ public class Manusia {
         return this.getTunjangan();
     }
 
+    @Override
     public String toString() {
         return String.format(
                 "Nama\t\t\t: %s\nNIK\t\t\t: %s\nJenis Kelamin\t: %s\nPendapatan\t\t\t: %.1f$",

@@ -14,8 +14,8 @@ public class Pekerja extends Manusia {
         this.hariKerja = hariKerja;
         this.NIP = NIP;
 
-        this.setGaji(this.hariKerja, this.jamKerja);
-        this.setBonus(this.hariKerja, this.jamKerja);
+        this.setGaji();
+        this.setBonus();
     }
 
     public double getGaji() {
@@ -38,12 +38,14 @@ public class Pekerja extends Manusia {
         return this.NIP;
     }
 
-    public void setGaji(int hariKerja, int jamKerja) {
-        this.gaji = hariKerja * jamKerja * 15;
+    public void setGaji() {
+        this.gaji = this.hariKerja * this.jamKerja * 15;
     }
 
-    public void setBonus(int hariKerja, int jamKerja) {
-        this.bonus = ((hariKerja - (hariKerja % 5)) * (jamKerja - 7) * 7) + (hariKerja % 5) * jamKerja * 20;
+    public void setBonus() {
+        this.bonus = (((hariKerja - (hariKerja % 5)) * jamKerja * 15)
+                + (((hariKerja - (hariKerja % 5)) * (jamKerja - 7) * 7))
+                + ((hariKerja % 5) * jamKerja * 20));
     }
 
     public void setJamKerja(int jamKerja) {
@@ -58,10 +60,6 @@ public class Pekerja extends Manusia {
         this.NIP = NIP;
     }
 
-    @Override
-    public double getPendapatan() {
-        return this.getGaji() + this.getBonus();
-    }
 
     public String getStatus() {
         String branch = String.format("%s cabang ke-%s", switch (this.NIP.charAt(0)) {
@@ -89,6 +87,11 @@ public class Pekerja extends Manusia {
         };
 
         return String.format("%s, %s", departement, branch);
+    }
+
+    @Override
+    public double getPendapatan() {
+        return super.getPendapatan() + this.getGaji() + this.getBonus();
     }
 
     @Override

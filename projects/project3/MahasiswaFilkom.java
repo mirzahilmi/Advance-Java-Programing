@@ -34,10 +34,6 @@ public class MahasiswaFilkom extends Manusia {
         return this.IPK;
     }
 
-    @Override
-    public double getPendapatan() {
-        return this.getBeasiswa();
-    }
 
     public String getStatus() {
         String major = switch (this.getNIM().charAt(6)) {
@@ -60,6 +56,10 @@ public class MahasiswaFilkom extends Manusia {
                 : (ipk > 3.5 && ipk <= 4.0) ? 75.0 : 0.0;
     }
 
+    @Override
+    public double getPendapatan() {
+        return super.getPendapatan() + this.getBeasiswa();
+    }
 
     @Override
     public String toString() {
