@@ -1,5 +1,5 @@
 .text-neutral-50 {
-	color: $neutral-50 !important
+    	color: $neutral-50 !important
 }
 .bg-neutral-50 {
 	background: $neutral-50 !important

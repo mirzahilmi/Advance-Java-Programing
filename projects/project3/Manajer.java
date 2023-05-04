@@ -7,6 +7,7 @@ public class Manajer extends Pekerja{
         super(jamKerja, hariKerja, NIP, nama, NIK, jenisKelamin, menikah);
 
         this.lamaKerja = lamaKerja;
+
     }
 
     public int getLamaKerja() {
@@ -15,6 +16,16 @@ public class Manajer extends Pekerja{
 
     public void setLamaKerja(int lamaKerja) {
         this.lamaKerja = lamaKerja;
+    }
+
+    @Override
+    public double calculateBonus() {
+        return super.calculateBonus() * 1.3;
+    }
+
+    @Override
+    public double getPendapatan() {
+        return super.getPendapatan() + 15.0;
     }
 
     @Override

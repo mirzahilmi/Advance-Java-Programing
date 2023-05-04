@@ -14,8 +14,8 @@ public class Pekerja extends Manusia {
         this.hariKerja = hariKerja;
         this.NIP = NIP;
 
-        this.setGaji();
-        this.setBonus();
+        this.gaji = this.calculateGaji();
+        this.bonus = this.calculateBonus();
     }
 
     public double getGaji() {
@@ -38,14 +38,25 @@ public class Pekerja extends Manusia {
         return this.NIP;
     }
 
-    public void setGaji() {
-        this.gaji = this.hariKerja * this.jamKerja * 15;
+    public void setGaji(double gaji) {
+        this.gaji = gaji;
     }
 
-    public void setBonus() {
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
+
+    public double calculateGaji() {
+        return this.hariKerja * this.jamKerja * 15;
+    }
+
+    public double calculateBonus() {
+        int weekDays = (this.hariKerja - this.hariKerja / 7 * 7) == 6 ?
+                this.hariKerja / 7 * 2 + 1 : this.hariKerja / 7 * 2;
+
         // Rumus bonus lembur = total hari kerja bukan libur * jam kerja diatas 7 jam * 7
-        this.bonus = (((this.hariKerja - (this. hariKerja % 5)) * (this.jamKerja - 7) * 7)
-                + ((this.hariKerja % 5) * this.jamKerja * 20));
+        // Rumus bonus libur = total hari libur * jam kerja * 20
+        return ((this.hariKerja - weekDays) * (this.jamKerja - 7) * 7) + (weekDays * this.jamKerja * 20);
     }
 
     public void setJamKerja(int jamKerja) {
