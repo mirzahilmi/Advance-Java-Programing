@@ -21,26 +21,15 @@ public class Main {
         while (run) {
             System.out.print(LOG);
             switch (sc.nextLine()) {
-                case "1":
-                    manusians.add(runManusiaInput());
-                    break;
-                case "2":
-                    mahasiswans.add(runMahasiswaInput());
-                    break;
-                case "3":
-                    pekerjans.add(runPekerjaInput());
-                    break;
-                case "4":
-                    manajers.add(runManajerInput());
-                    break;
-                case "5":
-                    System.out.printf(
-                            "Objects:\n%dx Manusia\n%dx Mahasiswa FILKOM\n%dx Pekerja\n%dx Manajer\n",
-                            manusians.size(), mahasiswans.size(), pekerjans.size(), manajers.size()
-                    );
-                    break;
-                default:
-                    run = false;
+                case "1" -> manusians.add(runManusiaInput());
+                case "2" -> mahasiswans.add(runMahasiswaInput());
+                case "3" -> pekerjans.add(runPekerjaInput());
+                case "4" -> manajers.add(runManajerInput());
+                case "5" -> System.out.printf(
+                        "Objects:\n%dx Manusia\n%dx Mahasiswa FILKOM\n%dx Pekerja\n%dx Manajer\n",
+                        manusians.size(), mahasiswans.size(), pekerjans.size(), manajers.size()
+                );
+                default -> run = false;
             }
         }
 
