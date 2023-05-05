@@ -108,7 +108,7 @@ public class Pekerja extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "%s\nBonus\t\t\t: %.1f$\nGaji\t\t\t: %s$\nStatus\t\t\t: %s",
+                "%s\nBonus   : %.1f$\nGaji   : %s$\nStatus   : %s",
                 super.toString(), this.getBonus(), this.getGaji(), this.getStatus()
         );
     }
