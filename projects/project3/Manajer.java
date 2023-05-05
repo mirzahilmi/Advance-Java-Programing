@@ -1,6 +1,6 @@
 package projects.project3;
 
-public class Manajer extends Pekerja{
+public class Manajer extends Pekerja {
     private int lamaKerja;
 
     public Manajer(int jamKerja, int hariKerja, String NIP, String nama, String NIK, boolean jenisKelamin, boolean menikah, int lamaKerja) {
