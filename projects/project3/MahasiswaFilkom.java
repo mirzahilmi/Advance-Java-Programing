@@ -1,6 +1,8 @@
 package projects.project3;
 
 public class MahasiswaFilkom extends Manusia {
+    // Mirza Hilmi Shodiq
+    // 225150707111067
 
     private String NIM;
     private double IPK;
@@ -55,7 +57,7 @@ public class MahasiswaFilkom extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "%s\nIPK\t\t\t: %.1f\nNIM\t\t\t: %s\nStatus\t\t\t: %s",
+                "%s\nIPK : %.1f\nNIM : %s\nStatus : %s",
                 super.toString(), this.getIPK(), this.getNIM(), this.getStatus()
         );
     }

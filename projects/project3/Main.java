@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    // Mirza Hilmi Shodiq
+    // 225150707111067
+
     private static final Scanner sc = new Scanner(System.in);
     private static final ArrayList<Manusia> manusians = new ArrayList<>();
     private static final ArrayList<MahasiswaFilkom> mahasiswans = new ArrayList<>();
@@ -44,41 +47,28 @@ public class Main {
                 case '2' -> {
                     System.out.printf("\nManusia Count : %dx Manusia\n", manusians.size());
                     for (Manusia manusia : manusians) {
-                        showManusiaInfo(manusia);
-                        System.out.println();
+                        System.out.printf("\n%s\n", manusia.toString());
                     }
                 }
 
                 case '3' -> {
                     System.out.printf("\nMahasiswa Count : %dx Mahasiswa FILKOM\n", mahasiswans.size());
                     for (MahasiswaFilkom mahasiswa : mahasiswans) {
-                        showManusiaInfo(mahasiswa);
-                        System.out.printf(
-                                "\nIPK\t: %.1f\nNIM\t: %s\nStatus\t: %s\n",
-                                mahasiswa.getIPK(), mahasiswa.getNIM(), mahasiswa.getStatus()
-                        );
+                        System.out.printf("\n%s\n", mahasiswa.toString());
                     }
                 }
 
                 case '4' -> {
                     System.out.printf("\nPekerja Count : %dx Pekerja\n", pekerjans.size());
                     for (Pekerja pekerja : pekerjans) {
-                        showManusiaInfo(pekerja);
-                        System.out.printf(
-                                "\nBonus\t: %.1f\nGaji\t: %.1f\nStatus\t: %s\n",
-                                pekerja.getBonus(), pekerja.getGaji(), pekerja.getStatus()
-                        );
+                        System.out.printf("\n%s\n", pekerja.toString());
                     }
                 }
 
                 case '5' -> {
                     System.out.printf("\nManajer Count : %dx Manajer\n", manajers.size());
                     for (Manajer manajer : manajers) {
-                        showManusiaInfo(manajer);
-                        System.out.printf(
-                                "\nBonus\t: %.1f\nGaji\t: %.1f\nStatus\t: %s\nLama Kerja\t: %d hari\n",
-                                manajer.getBonus(), manajer.getGaji(), manajer.getStatus(), manajer.getLamaKerja()
-                        );
+                        System.out.printf("\n%s\n", manajer.toString());
                     }
                 }
 
@@ -166,14 +156,6 @@ public class Main {
                 worker.getJamKerja(), worker.getHariKerja(), worker.getNIP(),
                 worker.getNama(), worker.getNIK(), worker.getJenisKelamin(),
                 worker.getMenikah(), lamaKerja
-        );
-    }
-
-    private static void showManusiaInfo(Manusia man) {
-        System.out.printf(
-                "\nNama\t: %s\nNIK\t: %s\nJenis Kelamin\t: %s\nStatus Menikah\t: %s\nPendapatan\t: %.1f$",
-                man.getNama(), man.getNIK(), man.getJenisKelamin() ? "Laki-laki" : "Perempuan",
-                man.getMenikah() ? "Sudah Menikah" : "Belum Menikah", man.getPendapatan()
         );
     }
 }

@@ -1,6 +1,9 @@
 package projects.project3;
 
 public class Pekerja extends Manusia {
+    // Mirza Hilmi Shodiq
+    // 225150707111067
+
     private double gaji;
     private double bonus;
     private int jamKerja;
@@ -108,7 +111,7 @@ public class Pekerja extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "%s\nBonus   : %.1f$\nGaji   : %s$\nStatus   : %s",
+                "%s\nBonus : %.1f$\nGaji : %s$\nStatus : %s",
                 super.toString(), this.getBonus(), this.getGaji(), this.getStatus()
         );
     }

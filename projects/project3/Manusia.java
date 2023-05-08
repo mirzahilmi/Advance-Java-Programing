@@ -1,6 +1,8 @@
 package projects.project3;
 
 public class Manusia {
+    // Mirza Hilmi Shodiq
+    // 225150707111067
 
     private String nama;
     private String NIK;
@@ -62,7 +64,7 @@ public class Manusia {
     @Override
     public String toString() {
         return String.format(
-                "Nama\t\t\t: %s\nNIK\t\t\t: %s\nJenis Kelamin\t: %s\nPendapatan\t\t\t: %.1f$",
+                "Nama : %s\nNIK : %s\nJenis Kelamin : %s\nPendapatan : %.1f$",
                 this.getNama(),
                 this.getNIK(),
                 this.getJenisKelamin() ? "Laki-Laki" : "Perempuan",

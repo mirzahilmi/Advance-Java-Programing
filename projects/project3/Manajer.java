@@ -1,6 +1,9 @@
 package projects.project3;
 
 public class Manajer extends Pekerja {
+    // Mirza Hilmi Shodiq
+    // 225150707111067
+
     private int lamaKerja;
 
     public Manajer(int jamKerja, int hariKerja, String NIP, String nama, String NIK, boolean jenisKelamin, boolean menikah, int lamaKerja) {
@@ -30,6 +33,6 @@ public class Manajer extends Pekerja {
 
     @Override
     public String toString() {
-        return String.format("%s\n%s", super.toString(), this.getLamaKerja());
+        return String.format("%s\nLama Kerja : %s", super.toString(), this.getLamaKerja());
     }
 }
