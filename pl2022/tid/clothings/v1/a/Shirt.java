@@ -1,30 +1,35 @@
 package pl2022.tid.clothings.v1.a;
 
 public class Shirt extends Clothing {
-    // Mirza Hilmi Shodiq
-    // 225150707111067
 
-    private int shoulderSize;
+  // Mirza Hilmi Shodiq
+  // 225150707111067
 
-    public Shirt() {}
+  private int shoulderSize;
 
-    public Shirt(String id, int size, int shoulderSize) {
-        super.setId(id);
-        super.setSize(size);
+  public Shirt() {}
 
-        this.shoulderSize = shoulderSize;
-    }
+  public Shirt(String id, int size, int shoulderSize) {
+    super.setId(id);
+    super.setSize(size);
 
-    public int getShoulderSize() {
-        return shoulderSize;
-    }
+    this.shoulderSize = shoulderSize;
+  }
 
-    public void setShoulderSize(int shoulderSize) {
-        this.shoulderSize = shoulderSize;
-    }
+  public int getShoulderSize() {
+    return shoulderSize;
+  }
 
-    @Override
-    public String getDescription() {
-        return String.format("%s\nLebar bahu: %d", super.getDescription(), this.shoulderSize);
-    }
+  public void setShoulderSize(int shoulderSize) {
+    this.shoulderSize = shoulderSize;
+  }
+
+  @Override
+  public String getDescription() {
+    return String.format(
+      "%s\nLebar bahu: %d",
+      super.getDescription(),
+      this.shoulderSize
+    );
+  }
 }

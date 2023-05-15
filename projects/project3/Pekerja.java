@@ -1,6 +1,7 @@
 package projects.project3;
 
 public class Pekerja extends Manusia {
+
     // Mirza Hilmi Shodiq
     // 225150707111067
 
@@ -10,9 +11,16 @@ public class Pekerja extends Manusia {
     private int hariKerja;
     private String NIP;
 
-    public Pekerja(int jamKerja, int hariKerja, String NIP, String nama, String NIK, boolean jenisKelamin, boolean menikah) {
+    public Pekerja(
+        int jamKerja,
+        int hariKerja,
+        String NIP,
+        String nama,
+        String NIK,
+        boolean jenisKelamin,
+        boolean menikah
+    ) {
         super(nama, NIK, jenisKelamin, menikah);
-
         this.jamKerja = jamKerja;
         this.hariKerja = hariKerja;
         this.NIP = NIP;
@@ -54,12 +62,17 @@ public class Pekerja extends Manusia {
     }
 
     public double calculateBonus() {
-        int weekDays = (this.hariKerja - this.hariKerja / 7 * 7) == 6 ?
-                this.hariKerja / 7 * 2 + 1 : this.hariKerja / 7 * 2;
+        int weekDays = (this.hariKerja - this.hariKerja / 7 * 7) == 6
+            ? this.hariKerja / 7 * 2 + 1
+            : this.hariKerja / 7 * 2;
 
-        // Rumus bonus lembur = total hari kerja bukan libur * jam kerja diatas 7 jam * 7
+        // Rumus bonus lembur = total hari kerja bukan libur * jam kerja diatas 7 jam *
+        // 7
         // Rumus bonus libur = total hari libur * jam kerja * 20
-        return ((this.hariKerja - weekDays) * (this.jamKerja - 7) * 7) + (weekDays * this.jamKerja * 20);
+        return (
+            ((this.hariKerja - weekDays) * (this.jamKerja - 7) * 7) +
+            (weekDays * this.jamKerja * 20)
+        );
     }
 
     public void setJamKerja(int jamKerja) {
@@ -74,31 +87,35 @@ public class Pekerja extends Manusia {
         this.NIP = NIP;
     }
 
-
     public String getStatus() {
-        String branch = String.format("%s cabang ke-%s", switch (this.NIP.charAt(0)) {
-            case '1' -> "Mondstadt";
-            case '2' -> "Liyue";
-            case '3' -> "Inazuma";
-            case '4' -> "Sumeru";
-            case '5' -> "Fontaine";
-            case '6' -> "Natlan";
-            case '7' -> "Snezhnaya";
-            default -> "";
-        }, this.NIP.charAt(2));
+        String branch = String.format(
+            "%s cabang ke-%s",
+            switch (this.NIP.charAt(0)) {
+                case '1' -> "Mondstadt";
+                case '2' -> "Liyue";
+                case '3' -> "Inazuma";
+                case '4' -> "Sumeru";
+                case '5' -> "Fontaine";
+                case '6' -> "Natlan";
+                case '7' -> "Snezhnaya";
+                default -> "";
+            },
+            this.NIP.charAt(2)
+        );
 
-        String departement = switch (this.NIP.charAt(6)) {
-            case '1' -> "Pemasaran";
-            case '2' -> "Humas";
-            case '3' -> "Riset";
-            case '4' -> "Teknologi";
-            case '5' -> "Personalia";
-            case '6' -> "Akademik";
-            case '7' -> "Administrasi";
-            case '8' -> "Operasional";
-            case '9' -> "Pembangunan";
-            default -> "";
-        };
+        String departement =
+            switch (this.NIP.charAt(6)) {
+                case '1' -> "Pemasaran";
+                case '2' -> "Humas";
+                case '3' -> "Riset";
+                case '4' -> "Teknologi";
+                case '5' -> "Personalia";
+                case '6' -> "Akademik";
+                case '7' -> "Administrasi";
+                case '8' -> "Operasional";
+                case '9' -> "Pembangunan";
+                default -> "";
+            };
 
         return String.format("%s, %s", departement, branch);
     }
@@ -111,8 +128,11 @@ public class Pekerja extends Manusia {
     @Override
     public String toString() {
         return String.format(
-                "%s\nBonus : %.1f$\nGaji : %s$\nStatus : %s",
-                super.toString(), this.getBonus(), this.getGaji(), this.getStatus()
+            "%s\nBonus : %.1f$\nGaji : %s$\nStatus : %s",
+            super.toString(),
+            this.getBonus(),
+            this.getGaji(),
+            this.getStatus()
         );
     }
 }

@@ -1,29 +1,30 @@
 package pl2022.tid.clothings.v2.a;
 
 public class Clothing {
-    // Mirza Hilmi Shodiq
-    // 225150707111067
 
-    private String id;
-    private int size;
+  // Mirza Hilmi Shodiq
+  // 225150707111067
 
-    public String getId() {
-        return id;
-    }
+  private String id;
+  private int size;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public int getSize() {
-        return size;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setSize(int size) {
-        this.size = size;
-    }
+  public int getSize() {
+    return size;
+  }
 
-    public String getDescription() {
-        return String.format("ID: %s\nUkuran umum: %d", this.id, this.size);
-    }
+  public void setSize(int size) {
+    this.size = size;
+  }
+
+  public String getDescription() {
+    return String.format("ID: %s\nUkuran umum: %d", this.id, this.size);
+  }
 }
