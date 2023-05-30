@@ -1,4 +1,4 @@
-package projects.test;
+package projects.test.project1;
 
 public class Ayam extends Hewan {
 

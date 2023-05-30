@@ -10,12 +10,7 @@ public class Manusia {
   private boolean jenisKelamin;
   private boolean menikah;
 
-  public Manusia(
-    String nama,
-    String NIK,
-    boolean jenisKelamin,
-    boolean menikah
-  ) {
+  public Manusia(String nama, String NIK, boolean jenisKelamin, boolean menikah) {
     this.nama = nama;
     this.NIK = NIK;
     this.jenisKelamin = jenisKelamin;

@@ -54,9 +54,7 @@ public class MahasiswaFilkom extends Manusia {
   public double getBeasiswa() {
     double ipk = this.getIPK();
 
-    return (ipk >= 3.0 && ipk <= 3.5)
-      ? 50.0
-      : (ipk > 3.5 && ipk <= 4.0) ? 75.0 : 0.0;
+    return (ipk >= 3.0 && ipk <= 3.5) ? 50.0 : (ipk > 3.5 && ipk <= 4.0) ? 75.0 : 0.0;
   }
 
   @Override

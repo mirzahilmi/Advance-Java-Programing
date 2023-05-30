@@ -9,9 +9,9 @@ import projects.project3.Pekerja;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Dog dog = new Dog("Halo", "Ayam", false);
+  public static void main(String[] args) {
+    Dog dog = new Dog("Halo", "Ayam", false);
 
-        System.out.println(dog.toString());
-    }
+    System.out.println(dog.toString());
+  }
 }

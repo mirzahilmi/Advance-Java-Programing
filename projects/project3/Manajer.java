@@ -41,10 +41,6 @@ public class Manajer extends Pekerja {
 
   @Override
   public String toString() {
-    return String.format(
-      "%s\nLama Kerja : %s",
-      super.toString(),
-      this.getLamaKerja()
-    );
+    return String.format("%s\nLama Kerja : %s", super.toString(), this.getLamaKerja());
   }
 }

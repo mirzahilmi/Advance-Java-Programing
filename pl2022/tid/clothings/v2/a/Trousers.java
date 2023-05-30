@@ -26,10 +26,6 @@ public class Trousers extends Clothing {
 
   @Override
   public String getDescription() {
-    return String.format(
-      "%s\nTipe tempat sabuk: %s",
-      super.getDescription(),
-      this.beltLoopsType
-    );
+    return String.format("%s\nTipe tempat sabuk: %s", super.getDescription(), this.beltLoopsType);
   }
 }
